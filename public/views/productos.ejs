@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>WebPage</title>
+</head>
+<body>
+    <%- include('partials/nav.ejs'); %>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1>Productos</h1>
+                <% for (i = 0 ; i < productos.length ; i++) { %>
+                    <article>
+                        <a href="/api/productos/<%= productos[i].id %>" class="text-product"> 
+                            <img src="/images/productos/<%= productos[i].image %>" alt="<%= productos[i].model %>" class="product_img">
+                            <div class="main-article" style="text-decoration: none;">
+                                <h4 class="descripcion"><%= productos[i].nombre %></h4>
+                                <p class="precio">$<%= productos[i].precio %></p>
+                            </div>
+                        </a>
+                    </article>
+                <% } %>
+                </div> 
+            </div>
+            <div class="col-4">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/ejs@3.1.6/ejs.min.js"></script>
+    <script src="./js/cliente.js"></script>
+</body>
+</html>

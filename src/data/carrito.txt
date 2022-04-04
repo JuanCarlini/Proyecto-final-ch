@@ -1,0 +1,28 @@
+[
+  {
+    "id": 2,
+    "timestamp": "04/04/2022 11:11:50 AM",
+    "products": [
+      {
+        "id": 2,
+        "timestamp": "04/04/2022 9:01:09 AM",
+        "nombre": "regla",
+        "descripcion": "si",
+        "codigo": "no",
+        "foto": "hola",
+        "precio": "2",
+        "stock": "4"
+      },
+      {
+        "id": 3,
+        "timestamp": "04/04/2022 9:39:04 AM",
+        "nombre": "regla",
+        "descripcion": "si",
+        "codigo": "no",
+        "foto": "hola",
+        "precio": "2",
+        "stock": "4"
+      }
+    ]
+  }
+]
