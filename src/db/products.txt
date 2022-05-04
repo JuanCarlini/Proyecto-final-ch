@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "timestamp": "05/01/2022 2:45:53 PM",
+    "name": "cama",
+    "description": "prueba",
+    "code": "si",
+    "url": "hola.com",
+    "price": "12",
+    "stock": "9"
+  }
+]
